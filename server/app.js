@@ -13,9 +13,9 @@ appNext.prepare().then(()=>{
 		return handle(req, res);
 	})
 
-	//const httpServer = http.createServer(app);
-	//const httpsServer = https.createServer(app);
-	app.listen(5000, ()=>console.log("> App on port 5000"));
-	//httpServer.listen(5000, ()=>console.log("> Http on port 5000"));
-	//httpsServer.listen(5001, ()=>console.log("> Https on port 5001"));
+	const httpServer = http.createServer(app);
+	const httpsServer = https.createServer(app);
+	/* app.listen(5000, ()=>console.log("> App on port 5000")); */
+	httpServer.listen(5000, ()=>console.log("> Http on port 5000"));
+	httpsServer.listen(5001, ()=>console.log("> Https on port 5001"));
 })
