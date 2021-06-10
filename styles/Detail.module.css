@@ -152,6 +152,9 @@
     .content{
         width: 95vw;
     }
+    .divBack{
+        width: 95vw;
+    }
     .boxToken{
         font-size: 1.4vw;
     }
