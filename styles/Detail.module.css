@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(240, 240, 240);
+  padding: 5vw 0;
+  font-family: 'Mitr', sans-serif;
+}
+.divBack{
+    position: relative;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btnBack{
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btnBack:hover{
+    color: rgb(224, 24, 67);
+}
+.content{
+    position: relative;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.panelLeft, .panelRight{
+    padding: 2vw;
+    border-radius: 10px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+}
+.panelLeft{
+    flex: 2;
+    word-wrap: break-word
+}
+.panelRight{
+    flex: 1;
+    word-wrap: break-word;
+}
+.logo{
+    border-radius: 10px;
+    width: 20vw;
+}
+.txtName{
+    font-weight: bold;
+    font-size: 24px;
+}
+.txtSymbol{
+    padding: .5vw 10px;
+    background: rgb(255, 81, 110);
+    color: white;
+    margin-left: 2vw;
+}
+.btnSocial{
+    border: 0;
+    padding: .2vw 10px;
+    color: white;
+    background: rgb(17, 140, 255);
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: .2s;
+}
+.btnSocial:hover{
+    background: rgb(21, 98, 170);
+}
+.txtMarketCap{
+    padding: 2px 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: white;
+    background:rgb(50, 50, 50);
+    border: 1px solid rgb(50, 50, 50);
+}
+.txtMarketCapValue{
+    border: 1px solid rgb(50, 50, 50);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 2px 10px;
+}
+.txtPrice{
+    padding: 2px 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: white;
+    background:rgb(25, 214, 173);
+    border: 1px solid rgb(25, 214, 173);
+}
+.txtPriceValue{
+    border: 1px solid rgb(25, 214, 173);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 2px 10px;
+}
+
+.contractsName{
+    font-weight: bold;
+    /* animation: animateContractName 15s infinite; */
+}
+
+@keyframes animateContractName{
+    0%{
+        background: linear-gradient(to right, rgb(0, 130, 216), rgb(255, 21, 71), rgb(0, 202, 202), rgb(225, 0, 255));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 25%{
+        background: linear-gradient(to right, rgb(225, 0, 255), rgb(0, 130, 216), rgb(255, 21, 71), rgb(0, 202, 202));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 50% {
+        background: linear-gradient(to right, rgb(0, 202, 202), rgb(225, 0, 255), rgb(0, 130, 216), rgb(255, 21, 71));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 75%{
+        background: linear-gradient(to right, rgb(255, 21, 71), rgb(0, 202, 202), rgb(225, 0, 255), rgb(0, 130, 216));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 100%{
+        background: linear-gradient(to right, rgb(0, 130, 216), rgb(255, 21, 71), rgb(0, 202, 202), rgb(225, 0, 255));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.boxToken{
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, rgb(168, 18, 51) , rgb(111, 10, 179));
+    border-radius: 5px;
+    color: white;
+    font-size: 1vw;
+}
+.btnCopy{
+    cursor: pointer;
+    border: 0;
+    background: rgb(70, 70, 70);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border-radius: 3px;
+}
+.btnCopy:hover{
+    background: black;
+}
+
+@media only screen and (max-width: 1000px){
+    .content{
+        width: 95vw;
+    }
+    .boxToken{
+        font-size: 1.4vw;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .content{
+        flex-direction: column;
+    }
+    .panelLeft, .panelRight{
+        width: 100%;
+    }
+    .logo{
+        width: 40vw;
+    }
+    .panelRight{
+        margin-top: 3vw;
+    }
+    .btnSocial{
+        padding: .2vw 5px;
+        margin-right: 3px;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+    .boxToken{
+        font-size: 3vw;
+    }
+}
